@@ -169,8 +169,46 @@ magi-front/
 
 - `entity/magi-front-asset-repo.md` (이 레포 자체) — *예정*
 - `entity/persona-clinical.md` / `persona-editorial.md` / `persona-community.md` / `persona-japanese-minimal.md` / `persona-luxury-trust.md` — *예정*
+- `entity/persona-dev-technical.md` / `persona-playful-friendly.md` / `persona-institutional.md` — *v0.2 신규, 예정*
+- `entity/magi-front-monitoring-list.md` — *v1.1 신설, 예정*
 - `incident/exit-sys-persona-vacancy-2026-05-08.md` — 페르소나 부재 함정의 실측 사례
 - `decision/front-skill-charter-2026-05-08.md` — 옵션 C(지식·자산 분리) 채택
+- `decision/magi-front-v0.2-persona-extension-2026-05-09.md` — 페르소나 5→8 확장 결정 *예정*
+
+---
+
+## Maintenance
+
+자산 레포 특성상 *daily*가 아닌 *세션 마감 시 또는 변경 발생 시* 점검. 슬래시 명령 1개로 통합:
+
+```
+/magi-front-daily-commit
+```
+
+### 5단계 사이클
+
+1. **자기 레포 dirty 점검** — `git status --short` + 최근 커밋 확인
+2. **Health check** — `npm run validate` (56/56 PASS) + `npm run build` (26 파일) + curl 16 endpoint (HTTP 200)
+3. **magi-wiki 역저장 후보 제안** — 페르소나 변경·monitoring-list 갱신·reference 분석·incident 발견 시 `_inbox` 드롭 안내 (SR-01 — 드롭만, magi-wiki 직접 commit·push 절대 X)
+4. **Git 커밋·푸시** — dirty 있을 때만. 경로 명시 add (`-A` 금지) + 스코프 라벨 `[magi-front]`
+5. **다음 cadence 알림** — Exit_sys 1차 실측 / reference inbox 첫 시범 / monitoring-list 분기별 / 9·10 페르소나 결정 / GitHub Actions cron 셋업
+
+### 다른 프로젝트와의 차이 (의도적 경량)
+
+- ✗ CLAUDE.md / DYNAMIC.md / daily_logs / _inbox / ingest 파이프라인 (LPS 비-9-컴포넌트)
+- ✗ 코드맵 / 일별 로그 / 자체 wiki
+- ✓ 자기 레포 commit · magi-wiki `_inbox` 드롭 안내 · Health check · cadence 알림
+
+상세는 `~/.claude/commands/magi-front-daily-commit.md`.
+
+### 자산 헬스 빠른 체크 (npm)
+
+```bash
+npm run validate   # DESIGN.md ↔ registry 토큰 1:1 (56/56 PASS 기대)
+npm run build      # public/ 미러 빌드 (26 파일)
+```
+
+라이브 endpoint 16종 점검은 `/magi-front-daily-commit` Step 2.3에 박제.
 
 ---
 
