@@ -1,0 +1,62 @@
+/*
+ * magi-front · japanese-minimal persona
+ * Japanese Minimal / OTC · 薬局 — 정보밀도·각진 형태·단일 액센트
+ * Source: design-md/japanese-minimal.md (단일 소스)
+ */
+
+@layer base {
+  :root {
+    --background: #FFFFFF;
+    --foreground: #0A0A0A;
+    --card: #F5F5F5;
+    --card-foreground: #0A0A0A;
+    --popover: #FFFFFF;
+    --popover-foreground: #0A0A0A;
+    --primary: #0A0A0A;
+    --primary-foreground: #FFFFFF;
+    --secondary: #F5F5F5;
+    --secondary-foreground: #0A0A0A;
+    --muted: #F5F5F5;
+    --muted-foreground: #5C5C5C;
+    --accent: #1F8A4F;
+    --accent-foreground: #FFFFFF;
+    --destructive: #B82828;
+    --destructive-foreground: #FFFFFF;
+    --border: #E0E0E0;
+    --input: #E0E0E0;
+    --ring: #1F8A4F;
+
+    --radius-sm: 0.25rem;
+    --radius: 0.25rem;
+
+    --font-heading: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+    --font-body: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+
+    --status-success: #1F8A4F;
+    --status-warning: #C97A1F;
+    --status-error: #B82828;
+    --status-info: #2B5F8E;
+  }
+
+  .dark {
+    --background: #0A0A0A;
+    --foreground: #F0F0F0;
+    --card: #161616;
+    --card-foreground: #F0F0F0;
+    --popover: #0A0A0A;
+    --popover-foreground: #F0F0F0;
+    --primary: #F0F0F0;
+    --primary-foreground: #0A0A0A;
+    --secondary: #161616;
+    --secondary-foreground: #F0F0F0;
+    --muted: #1E1E1E;
+    --muted-foreground: #9A9A9A;
+    --accent: #3FAA6F;
+    --accent-foreground: #0A0A0A;
+    --destructive: #D85858;
+    --destructive-foreground: #0A0A0A;
+    --border: #2A2A2A;
+    --input: #2A2A2A;
+    --ring: #3FAA6F;
+  }
+}

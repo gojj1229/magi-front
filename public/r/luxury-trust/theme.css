@@ -1,0 +1,62 @@
+/*
+ * magi-front · luxury-trust persona
+ * Luxury / Trust — KR-JP 카이토리 럭셔리 거래신뢰 · charcoal · gold · serif heading + sans body
+ * Source: design-md/luxury-trust.md (단일 소스)
+ */
+
+@layer base {
+  :root {
+    --background: #FAFAF8;
+    --foreground: #1A1B1E;
+    --card: #F2F0EA;
+    --card-foreground: #1A1B1E;
+    --popover: #FAFAF8;
+    --popover-foreground: #1A1B1E;
+    --primary: #1A1B1E;
+    --primary-foreground: #FAFAF8;
+    --secondary: #F2F0EA;
+    --secondary-foreground: #1A1B1E;
+    --muted: #F2F0EA;
+    --muted-foreground: #6A665D;
+    --accent: #B8956A;
+    --accent-foreground: #1A1B1E;
+    --destructive: #B85858;
+    --destructive-foreground: #FAFAF8;
+    --border: #D9D5C9;
+    --input: #D9D5C9;
+    --ring: #B8956A;
+
+    --radius-sm: 0.25rem;
+    --radius: 0.25rem;
+
+    --font-heading: 'Noto Serif KR', 'Noto Serif JP', 'Source Serif Pro', serif;
+    --font-body: 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans JP', sans-serif;
+
+    --status-success: #7A8E5A;
+    --status-warning: #C49968;
+    --status-error: #B85858;
+    --status-info: #6A8FA6;
+  }
+
+  .dark {
+    --background: #0F1012;
+    --foreground: #F5F2EC;
+    --card: #1F2024;
+    --card-foreground: #F5F2EC;
+    --popover: #0F1012;
+    --popover-foreground: #F5F2EC;
+    --primary: #F5F2EC;
+    --primary-foreground: #0F1012;
+    --secondary: #1F2024;
+    --secondary-foreground: #F5F2EC;
+    --muted: #27282C;
+    --muted-foreground: #9A968D;
+    --accent: #C9A57F;
+    --accent-foreground: #0F1012;
+    --destructive: #D87878;
+    --destructive-foreground: #0F1012;
+    --border: #2C2D31;
+    --input: #2C2D31;
+    --ring: #C9A57F;
+  }
+}

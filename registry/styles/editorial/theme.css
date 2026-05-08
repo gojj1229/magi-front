@@ -1,0 +1,64 @@
+/*
+ * magi-front · editorial persona
+ * 지식 / 가독성 — JP-KO 한방 위키 long-form · serif 본문 · warm paper
+ * Source: design-md/editorial.md (단일 소스)
+ */
+
+@layer base {
+  :root {
+    --background: #FBF9F5;
+    --foreground: #1F1B16;
+    --card: #F1ECE3;
+    --card-foreground: #1F1B16;
+    --popover: #FBF9F5;
+    --popover-foreground: #1F1B16;
+    --primary: #2A2520;
+    --primary-foreground: #FBF9F5;
+    --secondary: #F1ECE3;
+    --secondary-foreground: #1F1B16;
+    --muted: #F1ECE3;
+    --muted-foreground: #6B5F50;
+    --accent: #C8923A;
+    --accent-foreground: #1F1B16;
+    --destructive: #A83838;
+    --destructive-foreground: #FBF9F5;
+    --border: #E5DDCE;
+    --input: #E5DDCE;
+    --ring: #C8923A;
+
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius: 0.75rem;
+
+    --font-heading: 'Noto Serif JP', 'Noto Serif KR', 'Source Serif Pro', serif;
+    --font-body: 'Noto Serif JP', 'Noto Serif KR', 'Source Serif Pro', serif;
+
+    --status-success: #6B7B3E;
+    --status-warning: #B8702E;
+    --status-error: #A83838;
+    --status-info: #5A6F8E;
+  }
+
+  .dark {
+    --background: #1A1813;
+    --foreground: #EBE5D8;
+    --card: #221F19;
+    --card-foreground: #EBE5D8;
+    --popover: #1A1813;
+    --popover-foreground: #EBE5D8;
+    --primary: #EBE5D8;
+    --primary-foreground: #1A1813;
+    --secondary: #221F19;
+    --secondary-foreground: #EBE5D8;
+    --muted: #2B271F;
+    --muted-foreground: #9A8E78;
+    --accent: #D8A555;
+    --accent-foreground: #1A1813;
+    --destructive: #C95858;
+    --destructive-foreground: #1A1813;
+    --border: #3A342A;
+    --input: #3A342A;
+    --ring: #D8A555;
+  }
+}

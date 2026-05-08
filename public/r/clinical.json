@@ -1,0 +1,71 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "clinical",
+  "type": "registry:style",
+  "title": "Clinical / Trust",
+  "description": "정제된 한국 의료 페르소나 — deep teal · 신뢰·가독성 우선. design-md/clinical.md의 토큰 미러.",
+  "categories": [
+    "theme",
+    "medical"
+  ],
+  "files": [
+    {
+      "path": "theme.css",
+      "type": "registry:style",
+      "target": "app/globals.css"
+    }
+  ],
+  "cssVars": {
+    "theme": {
+      "font-heading": "Pretendard, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif",
+      "font-body": "Pretendard, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif",
+      "radius-sm": "0.25rem",
+      "radius-md": "0.5rem",
+      "radius-lg": "0.75rem"
+    },
+    "light": {
+      "background": "#FAFBFC",
+      "foreground": "#0F1419",
+      "card": "#F2F5F7",
+      "card-foreground": "#0F1419",
+      "popover": "#FAFBFC",
+      "popover-foreground": "#0F1419",
+      "primary": "#0F6E7C",
+      "primary-foreground": "#FAFBFC",
+      "secondary": "#F2F5F7",
+      "secondary-foreground": "#0F1419",
+      "muted": "#F2F5F7",
+      "muted-foreground": "#5A6772",
+      "accent": "#4A8C7A",
+      "accent-foreground": "#FAFBFC",
+      "destructive": "#B83A3A",
+      "destructive-foreground": "#FAFBFC",
+      "border": "#DCE3E8",
+      "input": "#DCE3E8",
+      "ring": "#0F6E7C",
+      "radius": "0.5rem"
+    },
+    "dark": {
+      "background": "#0F1419",
+      "foreground": "#E5EAEE",
+      "card": "#171C22",
+      "card-foreground": "#E5EAEE",
+      "popover": "#0F1419",
+      "popover-foreground": "#E5EAEE",
+      "primary": "#4FB0BE",
+      "primary-foreground": "#0F1419",
+      "secondary": "#171C22",
+      "secondary-foreground": "#E5EAEE",
+      "muted": "#1F252B",
+      "muted-foreground": "#8A99A8",
+      "accent": "#7EC2B0",
+      "accent-foreground": "#0F1419",
+      "destructive": "#E55A5A",
+      "destructive-foreground": "#0F1419",
+      "border": "#2C343C",
+      "input": "#2C343C",
+      "ring": "#4FB0BE",
+      "radius": "0.5rem"
+    }
+  }
+}

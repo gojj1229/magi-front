@@ -1,0 +1,65 @@
+/*
+ * magi-front · community persona
+ * 따뜻함 / 사회성 — 한방 라이프 커뮤니티 · warm coral · 둥근 형태
+ * Source: design-md/community.md (단일 소스)
+ */
+
+@layer base {
+  :root {
+    --background: #FBF6F1;
+    --foreground: #3A2E25;
+    --card: #F4ECE2;
+    --card-foreground: #3A2E25;
+    --popover: #FBF6F1;
+    --popover-foreground: #3A2E25;
+    --primary: #E89B7A;
+    --primary-foreground: #3A2E25;
+    --secondary: #F4ECE2;
+    --secondary-foreground: #3A2E25;
+    --muted: #F4ECE2;
+    --muted-foreground: #7A6856;
+    --accent: #8FAB94;
+    --accent-foreground: #3A2E25;
+    --destructive: #C76A6A;
+    --destructive-foreground: #FBF6F1;
+    --border: #EADFD0;
+    --input: #EADFD0;
+    --ring: #E89B7A;
+
+    --radius-sm: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+    --radius: 1rem;
+
+    --font-heading: 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+    --font-body: 'Pretendard', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+
+    --status-success: #7A9B5E;
+    --status-warning: #D4944A;
+    --status-error: #C76A6A;
+    --status-info: #6E8FA6;
+  }
+
+  .dark {
+    --background: #241C16;
+    --foreground: #F2E8DC;
+    --card: #2E2520;
+    --card-foreground: #F2E8DC;
+    --popover: #241C16;
+    --popover-foreground: #F2E8DC;
+    --primary: #F2B091;
+    --primary-foreground: #241C16;
+    --secondary: #2E2520;
+    --secondary-foreground: #F2E8DC;
+    --muted: #372D26;
+    --muted-foreground: #A89682;
+    --accent: #A8C2AC;
+    --accent-foreground: #241C16;
+    --destructive: #D88080;
+    --destructive-foreground: #241C16;
+    --border: #473A30;
+    --input: #473A30;
+    --ring: #F2B091;
+  }
+}

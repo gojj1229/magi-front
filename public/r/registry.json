@@ -1,0 +1,99 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "magi-front",
+  "homepage": "https://github.com/gojj1229/magi-front",
+  "items": [
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "clinical",
+      "type": "registry:style",
+      "title": "Clinical / Trust",
+      "description": "정제된 한국 의료 페르소나 — deep teal · 신뢰·가독성 우선",
+      "categories": [
+        "theme",
+        "medical"
+      ],
+      "files": [
+        {
+          "path": "registry/styles/clinical/theme.css",
+          "type": "registry:style",
+          "target": "app/globals.css"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "editorial",
+      "type": "registry:style",
+      "title": "Editorial / Knowledge",
+      "description": "JP-KO 한방 위키 long-form — serif 본문 · warm paper",
+      "categories": [
+        "theme",
+        "editorial"
+      ],
+      "files": [
+        {
+          "path": "registry/styles/editorial/theme.css",
+          "type": "registry:style",
+          "target": "app/globals.css"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "community",
+      "type": "registry:style",
+      "title": "Community / Warmth",
+      "description": "한방 라이프 커뮤니티 — warm coral · 둥근 형태",
+      "categories": [
+        "theme",
+        "social"
+      ],
+      "files": [
+        {
+          "path": "registry/styles/community/theme.css",
+          "type": "registry:style",
+          "target": "app/globals.css"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "japanese-minimal",
+      "type": "registry:style",
+      "title": "Japanese Minimal / OTC",
+      "description": "일본 OTC·약국 — 정보밀도·각진 형태·단일 액센트",
+      "categories": [
+        "theme",
+        "minimal",
+        "pharmacy"
+      ],
+      "files": [
+        {
+          "path": "registry/styles/japanese-minimal/theme.css",
+          "type": "registry:style",
+          "target": "app/globals.css"
+        }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "luxury-trust",
+      "type": "registry:style",
+      "title": "Luxury / Trust",
+      "description": "KR-JP 카이토리 럭셔리 거래신뢰 — charcoal · gold · serif heading",
+      "categories": [
+        "theme",
+        "luxury",
+        "commerce"
+      ],
+      "files": [
+        {
+          "path": "registry/styles/luxury-trust/theme.css",
+          "type": "registry:style",
+          "target": "app/globals.css"
+        }
+      ]
+    }
+  ]
+}
