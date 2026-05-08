@@ -143,6 +143,82 @@
       "discovered_via": ["user-experience"],
       "notes": "런처 앱, dark 우선·micro-animation"
     },
+    {
+      "id": "toss",
+      "name": "토스 (Toss)",
+      "url": "https://toss.im",
+      "category": "saas-dev",
+      "primary_persona": "playful-friendly",
+      "also_candidates": ["dev-technical"],
+      "language": "ko",
+      "discovered_via": ["user-brief"],
+      "notes": "한국 fintech 정점 — 일러스트 + clean dev. 한국 핀테크 디자인 표준"
+    },
+    {
+      "id": "kakaopay",
+      "name": "카카오페이",
+      "url": "https://www.kakaopay.com",
+      "category": "saas-dev",
+      "primary_persona": "dev-technical",
+      "also_candidates": ["playful-friendly"],
+      "language": "ko",
+      "discovered_via": ["user-brief"],
+      "notes": "한국 SaaS — 토스보다 cleaner dev-tech, 카카오 yellow 액센트"
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com",
+      "category": "saas-dev",
+      "primary_persona": "dev-technical",
+      "also_candidates": ["editorial"],
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "AI lab — serif heading + 따뜻한 monochrome, dev + editorial 경계"
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "url": "https://openai.com",
+      "category": "saas-dev",
+      "primary_persona": "dev-technical",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "AI lab — clean monochrome + green accent"
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face",
+      "url": "https://huggingface.co",
+      "category": "saas-dev",
+      "primary_persona": "dev-technical",
+      "also_candidates": ["playful-friendly"],
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "AI 커뮤니티/허브 — yellow brand + emoji 친화, dev + playful 경계"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "url": "https://github.com",
+      "category": "saas-dev",
+      "primary_persona": "dev-technical",
+      "also_candidates": ["community"],
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "Primer 디자인 시스템 — main은 dev-technical, Discussions·Sponsors는 community 톤"
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "url": "https://slack.com",
+      "category": "saas-dev",
+      "primary_persona": "dev-technical",
+      "also_candidates": ["community"],
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "워크플레이스 SaaS — dev/business 톤, marketing은 playful 혼재"
+    },
 
     {
       "id": "hermes",
@@ -263,6 +339,17 @@
       "language": "en",
       "discovered_via": ["user-brief"],
       "notes": "미국 럭셔리 리세일, verification 시각 시그널 학습"
+    },
+    {
+      "id": "mercari",
+      "name": "Mercari (メルカリ)",
+      "url": "https://jp.mercari.com",
+      "category": "kaitori-luxury",
+      "primary_persona": "playful-friendly",
+      "also_candidates": ["luxury-trust"],
+      "language": "ja-en",
+      "discovered_via": ["user-brief"],
+      "notes": "일본 C2C — red brand · casual 톤. Komehyo·Nanboya와 다름 (저-중가 C2C). luxury-trust(고가)·playful(브랜드 톤) 경계"
     },
 
     {
@@ -406,6 +493,28 @@
       "discovered_via": ["user-brief"],
       "notes": "제약 대기업 — japanese-minimal과 institutional 경계"
     },
+    {
+      "id": "hisamitsu",
+      "name": "久光製薬 (Hisamitsu)",
+      "url": "https://www.hisamitsu.co.jp",
+      "category": "pharmacy-jp",
+      "primary_persona": "japanese-minimal",
+      "also_candidates": ["institutional"],
+      "language": "ja-en",
+      "discovered_via": ["user-brief"],
+      "notes": "Salonpas 제조사 — pharmacy-jp 정점 후보. 제약 + OTC 양면"
+    },
+    {
+      "id": "kobayashi-pharma",
+      "name": "小林製薬 (Kobayashi)",
+      "url": "https://www.kobayashi.co.jp",
+      "category": "pharmacy-jp",
+      "primary_persona": "japanese-minimal",
+      "also_candidates": ["institutional"],
+      "language": "ja",
+      "discovered_via": ["user-brief"],
+      "notes": "OTC 소비자 친화 일본 제약 — 패키지 디자인 학습 정점"
+    },
 
     {
       "id": "wikipedia-en",
@@ -488,6 +597,17 @@
       "discovered_via": ["user-brief"],
       "notes": "한국 long-form 글쓰기 플랫폼"
     },
+    {
+      "id": "the-verge",
+      "name": "The Verge",
+      "url": "https://www.theverge.com",
+      "category": "wiki-editorial",
+      "primary_persona": "editorial",
+      "also_candidates": ["dev-technical"],
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "tech 미디어 — 편집형 typography·colored sections, editorial + dev 경계"
+    },
 
     {
       "id": "discord",
@@ -537,6 +657,17 @@
       "primary_persona": "community",
       "language": "en",
       "discovered_via": ["user-brief"]
+    },
+    {
+      "id": "daangn",
+      "name": "당근 (Karrot)",
+      "url": "https://www.daangn.com",
+      "category": "community-social",
+      "primary_persona": "community",
+      "also_candidates": ["playful-friendly"],
+      "language": "ko",
+      "discovered_via": ["user-brief"],
+      "notes": "한국 동네 커뮤니티 commerce — orange brand · 친근. community + playful 경계"
     },
 
     {
@@ -794,28 +925,32 @@
     }
   ],
   "stats": {
-    "total_brands": 65,
+    "total_brands": 89,
     "by_persona": {
-      "dev-technical": 12,
+      "dev-technical": 25,
       "luxury-trust": 12,
+      "institutional": 12,
+      "playful-friendly": 9,
+      "editorial": 9,
       "clinical": 8,
-      "japanese-minimal": 6,
-      "editorial": 8,
-      "community": 5,
-      "playful-friendly": 7,
-      "institutional": 11
+      "japanese-minimal": 8,
+      "community": 6
     },
     "by_category": {
-      "saas-dev": 12,
-      "kaitori-luxury": 12,
-      "medical-kr": 8,
-      "pharmacy-jp": 6,
-      "wiki-editorial": 8,
-      "community-social": 5,
-      "consumer-playful": 7,
+      "saas-dev": 19,
+      "kaitori-luxury": 13,
       "institutional-kr-jp": 11,
-      "system": 8
-    }
+      "wiki-editorial": 9,
+      "medical-kr": 8,
+      "pharmacy-jp": 8,
+      "system": 8,
+      "consumer-playful": 7,
+      "community-social": 6
+    },
+    "history": [
+      { "version": "1.0.0", "date": "2026-05-09", "brands": 65, "note": "초기 박제. 실제 카운트는 77이었으나 stats 오기재" },
+      { "version": "1.1.0", "date": "2026-05-09", "brands": 89, "note": "+12 strategic 추가 (한국 fintech·커뮤니티·AI dev·일본 제약·modern editorial·workplace SaaS). 통계 정확 재계산" }
+    ]
   },
   "next_steps": [
     "magi-wiki/content/_inbox/에 reference 카테고리 신설 (target_type: reference) — 본 list의 brand를 골라 1건씩 독립 분석 후 _inbox 드롭",
