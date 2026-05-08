@@ -1,0 +1,825 @@
+{
+  "$schema": "https://magi-front.vercel.app/schemas/monitoring-list.json",
+  "version": "1.0.0",
+  "updated_at": "2026-05-09",
+  "purpose": "magi-front 페르소나 8종에 대응하는 외부 관찰 대상 사이트 목록. 본 파일은 brand 이름·공개 URL·우리 페르소나 분류만 담는다. 각 brand에 대한 시각·토큰 분석은 *독립적으로* 수행되어 magi-wiki/content/_inbox/에 target_type:reference 로 박제된다.",
+  "license_note": "본 파일은 어떤 외부 큐레이션 서비스(Refero Styles, Mobbin, Awwwards 등)의 분석·토큰·태그·rationale도 포함하지 않는다. brand 이름과 URL은 공개 사실이므로 자유롭게 인용한다. discovered_via 필드는 brand를 *알게 된 경로*만 기록 (분석 내용은 인용 X).",
+  "sources": [
+    "user-brief — magi-front 부트스트랩 §3.2 외부 1차 소스",
+    "refero-styles-observation — brand 이름 발굴 origin (https://styles.refero.design/), 분석 인용 X",
+    "user-experience — 사용자 본인이 운영·관찰한 한일 시장 brand"
+  ],
+  "categories": {
+    "system": "디자인 시스템 정점·문서 — 토큰 어휘·rationale 산문 학습",
+    "kaitori-luxury": "한일 카이토리 + 글로벌 럭셔리 — luxury-trust 1차 소스",
+    "medical-kr": "한국 의료·한의원 — clinical 1차 소스",
+    "pharmacy-jp": "일본 OTC·약국 — japanese-minimal 1차 소스",
+    "wiki-editorial": "위키·long-form — editorial 1차 소스",
+    "community-social": "커뮤니티·소셜 — community 1차 소스",
+    "consumer-playful": "컨슈머·캐주얼 브랜드 — playful-friendly 1차 소스",
+    "institutional-kr-jp": "한일 정부·금융·대기업 — institutional 1차 소스",
+    "saas-dev": "SaaS·개발자 도구 — dev-technical 1차 소스"
+  },
+  "brands": [
+    {
+      "id": "stripe",
+      "name": "Stripe",
+      "url": "https://stripe.com",
+      "category": "saas-dev",
+      "primary_persona": "dev-technical",
+      "also_candidates": ["editorial"],
+      "language": "en",
+      "discovered_via": ["user-brief", "refero-styles-observation"],
+      "notes": "토큰 어휘·gradient hero·문서 톤 정점"
+    },
+    {
+      "id": "linear",
+      "name": "Linear",
+      "url": "https://linear.app",
+      "category": "saas-dev",
+      "primary_persona": "dev-technical",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "near-mono·radius sm 단일·dark 1급 정점"
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "url": "https://vercel.com",
+      "category": "saas-dev",
+      "primary_persona": "dev-technical",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "Geist font origin·dark/light 균형"
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "url": "https://notion.so",
+      "category": "saas-dev",
+      "primary_persona": "dev-technical",
+      "also_candidates": ["editorial", "playful-friendly"],
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "admin은 dev-technical, public docs는 editorial, marketing은 playful 톤"
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "url": "https://figma.com",
+      "category": "saas-dev",
+      "primary_persona": "dev-technical",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "툴 UI dev-technical, marketing은 playful 톤 혼재"
+    },
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "url": "https://elevenlabs.io",
+      "category": "saas-dev",
+      "primary_persona": "dev-technical",
+      "language": "en",
+      "discovered_via": ["refero-styles-observation"],
+      "notes": "warm gray + 듀얼 accent — dev-technical의 한 변형"
+    },
+    {
+      "id": "plausible",
+      "name": "Plausible",
+      "url": "https://plausible.io",
+      "category": "saas-dev",
+      "primary_persona": "dev-technical",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "오픈소스 분석 도구, near-mono·차분"
+    },
+    {
+      "id": "railway",
+      "name": "Railway",
+      "url": "https://railway.app",
+      "category": "saas-dev",
+      "primary_persona": "dev-technical",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "다크 우선·gradient hint"
+    },
+    {
+      "id": "resend",
+      "name": "Resend",
+      "url": "https://resend.com",
+      "category": "saas-dev",
+      "primary_persona": "dev-technical",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "이메일 dev API, monochrome 정점"
+    },
+    {
+      "id": "superhuman",
+      "name": "Superhuman",
+      "url": "https://superhuman.com",
+      "category": "saas-dev",
+      "primary_persona": "dev-technical",
+      "language": "en",
+      "discovered_via": ["refero-styles-observation"],
+      "notes": "고가 이메일 앱, dev + premium 사이"
+    },
+    {
+      "id": "authkit-workos",
+      "name": "AuthKit (WorkOS)",
+      "url": "https://www.authkit.com",
+      "category": "saas-dev",
+      "primary_persona": "dev-technical",
+      "language": "en",
+      "discovered_via": ["refero-styles-observation"],
+      "notes": "auth UI 라이브러리, dev-technical dark"
+    },
+    {
+      "id": "raycast",
+      "name": "Raycast",
+      "url": "https://raycast.com",
+      "category": "saas-dev",
+      "primary_persona": "dev-technical",
+      "language": "en",
+      "discovered_via": ["user-experience"],
+      "notes": "런처 앱, dark 우선·micro-animation"
+    },
+
+    {
+      "id": "hermes",
+      "name": "Hermès",
+      "url": "https://www.hermes.com",
+      "category": "kaitori-luxury",
+      "primary_persona": "luxury-trust",
+      "language": "fr-en-ja-ko",
+      "discovered_via": ["user-brief"],
+      "notes": "럭셔리 시각 정체성 정점"
+    },
+    {
+      "id": "chanel",
+      "name": "Chanel",
+      "url": "https://www.chanel.com",
+      "category": "kaitori-luxury",
+      "primary_persona": "luxury-trust",
+      "language": "fr-en",
+      "discovered_via": ["user-brief"],
+      "notes": "흑·백·serif heading 럭셔리"
+    },
+    {
+      "id": "patek-philippe",
+      "name": "Patek Philippe",
+      "url": "https://www.patek.com",
+      "category": "kaitori-luxury",
+      "primary_persona": "luxury-trust",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "시계 럭셔리, serif heading + dark mode"
+    },
+    {
+      "id": "audemars-piguet",
+      "name": "Audemars Piguet",
+      "url": "https://www.audemarspiguet.com",
+      "category": "kaitori-luxury",
+      "primary_persona": "luxury-trust",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "시계 럭셔리, dark cinematic"
+    },
+    {
+      "id": "rolex",
+      "name": "Rolex",
+      "url": "https://www.rolex.com",
+      "category": "kaitori-luxury",
+      "primary_persona": "luxury-trust",
+      "language": "en-ja-ko",
+      "discovered_via": ["user-brief"],
+      "notes": "시계 럭셔리 정점"
+    },
+    {
+      "id": "bottega-veneta",
+      "name": "Bottega Veneta",
+      "url": "https://www.bottegaveneta.com",
+      "category": "kaitori-luxury",
+      "primary_persona": "luxury-trust",
+      "language": "en-it-ja-ko",
+      "discovered_via": ["user-brief"],
+      "notes": "패션 럭셔리, 미니멀"
+    },
+    {
+      "id": "net-a-porter",
+      "name": "Net-a-Porter",
+      "url": "https://www.net-a-porter.com",
+      "category": "kaitori-luxury",
+      "primary_persona": "luxury-trust",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "럭셔리 e-commerce, editorial layout"
+    },
+    {
+      "id": "mr-porter",
+      "name": "Mr Porter",
+      "url": "https://www.mrporter.com",
+      "category": "kaitori-luxury",
+      "primary_persona": "luxury-trust",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "남성 럭셔리 e-commerce, editorial 톤"
+    },
+    {
+      "id": "komehyo",
+      "name": "Komehyo (コメ兵)",
+      "url": "https://www.komehyo.co.jp",
+      "category": "kaitori-luxury",
+      "primary_persona": "luxury-trust",
+      "language": "ja-ko-zh-en",
+      "discovered_via": ["user-brief"],
+      "notes": "일본 카이토리 1위 — Exit_sys 직접 경쟁사"
+    },
+    {
+      "id": "nanboya",
+      "name": "なんぼや",
+      "url": "https://nanboya.com",
+      "category": "kaitori-luxury",
+      "primary_persona": "luxury-trust",
+      "language": "ja-en-zh",
+      "discovered_via": ["user-brief"],
+      "notes": "일본 카이토리, 다국어 핫 스팟"
+    },
+    {
+      "id": "vestiaire-collective",
+      "name": "Vestiaire Collective",
+      "url": "https://www.vestiairecollective.com",
+      "category": "kaitori-luxury",
+      "primary_persona": "luxury-trust",
+      "language": "en-fr-ja-ko",
+      "discovered_via": ["user-brief"],
+      "notes": "글로벌 럭셔리 리세일, KR/JP 양국 진출"
+    },
+    {
+      "id": "the-realreal",
+      "name": "The RealReal",
+      "url": "https://www.therealreal.com",
+      "category": "kaitori-luxury",
+      "primary_persona": "luxury-trust",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "미국 럭셔리 리세일, verification 시각 시그널 학습"
+    },
+
+    {
+      "id": "jaseng",
+      "name": "자생한방병원",
+      "url": "https://www.jaseng.co.kr",
+      "category": "medical-kr",
+      "primary_persona": "clinical",
+      "language": "ko",
+      "discovered_via": ["user-brief"],
+      "notes": "한방 의료 대형, clinical KR 정점 후보"
+    },
+    {
+      "id": "hamsoa",
+      "name": "함소아한의원",
+      "url": "https://www.hamsoa.com",
+      "category": "medical-kr",
+      "primary_persona": "clinical",
+      "language": "ko",
+      "discovered_via": ["user-brief"],
+      "notes": "한방 의료 (소아 특화)"
+    },
+    {
+      "id": "snuh",
+      "name": "서울대학교병원",
+      "url": "https://www.snuh.org",
+      "category": "medical-kr",
+      "primary_persona": "clinical",
+      "also_candidates": ["institutional"],
+      "language": "ko-en",
+      "discovered_via": ["user-brief"],
+      "notes": "대형 의료기관, clinical/institutional 경계"
+    },
+    {
+      "id": "severance",
+      "name": "강남세브란스병원",
+      "url": "https://gs.iseverance.com",
+      "category": "medical-kr",
+      "primary_persona": "clinical",
+      "also_candidates": ["institutional"],
+      "language": "ko-en",
+      "discovered_via": ["user-brief"]
+    },
+    {
+      "id": "modoodoc",
+      "name": "모두닥",
+      "url": "https://www.modoodoc.com",
+      "category": "medical-kr",
+      "primary_persona": "clinical",
+      "language": "ko",
+      "discovered_via": ["user-brief"],
+      "notes": "의료 검색·예약 플랫폼"
+    },
+    {
+      "id": "goodoc",
+      "name": "굿닥",
+      "url": "https://www.goodoc.co.kr",
+      "category": "medical-kr",
+      "primary_persona": "clinical",
+      "language": "ko",
+      "discovered_via": ["user-brief"]
+    },
+    {
+      "id": "gangnamunni",
+      "name": "강남언니",
+      "url": "https://www.gangnamunni.com",
+      "category": "medical-kr",
+      "primary_persona": "clinical",
+      "also_candidates": ["community"],
+      "language": "ko",
+      "discovered_via": ["user-brief"],
+      "notes": "미용 의료 + 커뮤니티 hybrid"
+    },
+    {
+      "id": "mayo-clinic",
+      "name": "Mayo Clinic",
+      "url": "https://www.mayoclinic.org",
+      "category": "medical-kr",
+      "primary_persona": "clinical",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "글로벌 의료 정점, 환자 정보 layout 학습"
+    },
+
+    {
+      "id": "matsukiyo",
+      "name": "マツモトキヨシ",
+      "url": "https://www.matsukiyo.co.jp",
+      "category": "pharmacy-jp",
+      "primary_persona": "japanese-minimal",
+      "language": "ja-en",
+      "discovered_via": ["user-brief"],
+      "notes": "일본 OTC 1위"
+    },
+    {
+      "id": "cocokarafine",
+      "name": "ココカラファイン",
+      "url": "https://corp.cocokarafine.co.jp",
+      "category": "pharmacy-jp",
+      "primary_persona": "japanese-minimal",
+      "language": "ja",
+      "discovered_via": ["user-brief"]
+    },
+    {
+      "id": "tsuruha",
+      "name": "ツルハドラッグ",
+      "url": "https://www.tsuruha.co.jp",
+      "category": "pharmacy-jp",
+      "primary_persona": "japanese-minimal",
+      "language": "ja",
+      "discovered_via": ["user-brief"]
+    },
+    {
+      "id": "sundrug",
+      "name": "サンドラッグ",
+      "url": "https://www.sundrug.co.jp",
+      "category": "pharmacy-jp",
+      "primary_persona": "japanese-minimal",
+      "language": "ja",
+      "discovered_via": ["user-brief"]
+    },
+    {
+      "id": "muji",
+      "name": "Muji (無印良品)",
+      "url": "https://www.muji.com",
+      "category": "pharmacy-jp",
+      "primary_persona": "japanese-minimal",
+      "also_candidates": ["editorial"],
+      "language": "ja-en-ko-zh",
+      "discovered_via": ["user-brief"],
+      "notes": "일본 미니멀 정점, 약국 외에도 라이프스타일 적용"
+    },
+    {
+      "id": "taisho",
+      "name": "大正製薬",
+      "url": "https://www.taisho.co.jp",
+      "category": "pharmacy-jp",
+      "primary_persona": "japanese-minimal",
+      "also_candidates": ["institutional"],
+      "language": "ja",
+      "discovered_via": ["user-brief"],
+      "notes": "제약 대기업 — japanese-minimal과 institutional 경계"
+    },
+
+    {
+      "id": "wikipedia-en",
+      "name": "Wikipedia (English)",
+      "url": "https://en.wikipedia.org",
+      "category": "wiki-editorial",
+      "primary_persona": "editorial",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "위키 정점"
+    },
+    {
+      "id": "wikipedia-ja",
+      "name": "Wikipedia (日本語)",
+      "url": "https://ja.wikipedia.org",
+      "category": "wiki-editorial",
+      "primary_persona": "editorial",
+      "language": "ja",
+      "discovered_via": ["user-brief"],
+      "notes": "JP 본문 leading·한자 가독성 학습"
+    },
+    {
+      "id": "wikipedia-ko",
+      "name": "위키백과 (한국어)",
+      "url": "https://ko.wikipedia.org",
+      "category": "wiki-editorial",
+      "primary_persona": "editorial",
+      "language": "ko",
+      "discovered_via": ["user-brief"]
+    },
+    {
+      "id": "encykorea",
+      "name": "한국민족문화대백과사전",
+      "url": "https://encykorea.aks.ac.kr",
+      "category": "wiki-editorial",
+      "primary_persona": "editorial",
+      "also_candidates": ["institutional"],
+      "language": "ko",
+      "discovered_via": ["user-brief"],
+      "notes": "한국 학술 백과, editorial + institutional 경계"
+    },
+    {
+      "id": "kotobank",
+      "name": "kotobank",
+      "url": "https://kotobank.jp",
+      "category": "wiki-editorial",
+      "primary_persona": "editorial",
+      "language": "ja",
+      "discovered_via": ["user-brief"],
+      "notes": "일본 백과사전, JP long-form 정점"
+    },
+    {
+      "id": "mdn",
+      "name": "MDN Web Docs",
+      "url": "https://developer.mozilla.org",
+      "category": "wiki-editorial",
+      "primary_persona": "editorial",
+      "also_candidates": ["dev-technical"],
+      "language": "en-ja-ko",
+      "discovered_via": ["user-brief"],
+      "notes": "기술 문서 wiki, editorial + dev-technical 경계"
+    },
+    {
+      "id": "substack",
+      "name": "Substack",
+      "url": "https://substack.com",
+      "category": "wiki-editorial",
+      "primary_persona": "editorial",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "long-form 뉴스레터 플랫폼"
+    },
+    {
+      "id": "brunch",
+      "name": "Brunch",
+      "url": "https://brunch.co.kr",
+      "category": "wiki-editorial",
+      "primary_persona": "editorial",
+      "language": "ko",
+      "discovered_via": ["user-brief"],
+      "notes": "한국 long-form 글쓰기 플랫폼"
+    },
+
+    {
+      "id": "discord",
+      "name": "Discord",
+      "url": "https://discord.com",
+      "category": "community-social",
+      "primary_persona": "community",
+      "also_candidates": ["playful-friendly"],
+      "language": "en-ko-ja",
+      "discovered_via": ["user-brief"],
+      "notes": "커뮤니티 정점 — consumer marketing은 playful, in-app은 community"
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "url": "https://www.reddit.com",
+      "category": "community-social",
+      "primary_persona": "community",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "텍스트 커뮤니티 정점"
+    },
+    {
+      "id": "discourse",
+      "name": "Discourse",
+      "url": "https://www.discourse.org",
+      "category": "community-social",
+      "primary_persona": "community",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "포럼 플랫폼 표준"
+    },
+    {
+      "id": "mighty-networks",
+      "name": "Mighty Networks",
+      "url": "https://www.mightynetworks.com",
+      "category": "community-social",
+      "primary_persona": "community",
+      "language": "en",
+      "discovered_via": ["user-brief"]
+    },
+    {
+      "id": "patreon",
+      "name": "Patreon",
+      "url": "https://www.patreon.com",
+      "category": "community-social",
+      "primary_persona": "community",
+      "language": "en",
+      "discovered_via": ["user-brief"]
+    },
+
+    {
+      "id": "duolingo",
+      "name": "Duolingo",
+      "url": "https://www.duolingo.com",
+      "category": "consumer-playful",
+      "primary_persona": "playful-friendly",
+      "language": "en-ko-ja",
+      "discovered_via": ["user-brief"],
+      "notes": "playful-friendly 정점 — gamification·일러스트 캐릭터"
+    },
+    {
+      "id": "headspace",
+      "name": "Headspace",
+      "url": "https://www.headspace.com",
+      "category": "consumer-playful",
+      "primary_persona": "playful-friendly",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "명상 앱 — 일러스트 + 부드러운 톤"
+    },
+    {
+      "id": "calm",
+      "name": "Calm",
+      "url": "https://www.calm.com",
+      "category": "consumer-playful",
+      "primary_persona": "playful-friendly",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "명상 앱 — dark + 자연 메타포"
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "url": "https://www.spotify.com",
+      "category": "consumer-playful",
+      "primary_persona": "playful-friendly",
+      "language": "en-ko-ja",
+      "discovered_via": ["user-brief"],
+      "notes": "퍼스널 페이지(Wrapped) playful, 메인 다크"
+    },
+    {
+      "id": "airbnb",
+      "name": "Airbnb",
+      "url": "https://www.airbnb.com",
+      "category": "consumer-playful",
+      "primary_persona": "playful-friendly",
+      "language": "en-ko-ja",
+      "discovered_via": ["user-brief"],
+      "notes": "consumer 마케팅 playful, 자체 디자인 시스템(DLS)"
+    },
+    {
+      "id": "strava",
+      "name": "Strava",
+      "url": "https://www.strava.com",
+      "category": "consumer-playful",
+      "primary_persona": "playful-friendly",
+      "language": "en",
+      "discovered_via": ["user-experience"],
+      "notes": "운동 트래킹 — orange brand, gamification"
+    },
+    {
+      "id": "coros",
+      "name": "Coros",
+      "url": "https://www.coros.com",
+      "category": "consumer-playful",
+      "primary_persona": "playful-friendly",
+      "also_candidates": ["dev-technical"],
+      "language": "en",
+      "discovered_via": ["refero-styles-observation"],
+      "notes": "스포츠 워치 — playful + dev-technical 경계"
+    },
+
+    {
+      "id": "gov-kr",
+      "name": "정부24",
+      "url": "https://www.gov.kr",
+      "category": "institutional-kr-jp",
+      "primary_persona": "institutional",
+      "language": "ko",
+      "discovered_via": ["user-brief"],
+      "notes": "한국 정부 통합 포털 — institutional KR 정점"
+    },
+    {
+      "id": "bok",
+      "name": "한국은행",
+      "url": "https://www.bok.or.kr",
+      "category": "institutional-kr-jp",
+      "primary_persona": "institutional",
+      "language": "ko-en",
+      "discovered_via": ["user-brief"]
+    },
+    {
+      "id": "fss",
+      "name": "금융감독원",
+      "url": "https://www.fss.or.kr",
+      "category": "institutional-kr-jp",
+      "primary_persona": "institutional",
+      "language": "ko",
+      "discovered_via": ["user-brief"]
+    },
+    {
+      "id": "kb-bank",
+      "name": "KB국민은행",
+      "url": "https://www.kbstar.com",
+      "category": "institutional-kr-jp",
+      "primary_persona": "institutional",
+      "language": "ko",
+      "discovered_via": ["user-brief"]
+    },
+    {
+      "id": "shinhan-bank",
+      "name": "신한은행",
+      "url": "https://www.shinhan.com",
+      "category": "institutional-kr-jp",
+      "primary_persona": "institutional",
+      "language": "ko",
+      "discovered_via": ["user-brief"]
+    },
+    {
+      "id": "ibm",
+      "name": "IBM",
+      "url": "https://www.ibm.com",
+      "category": "institutional-kr-jp",
+      "primary_persona": "institutional",
+      "also_candidates": ["dev-technical"],
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "Carbon Design System 운영 — institutional + dev-technical 경계"
+    },
+    {
+      "id": "goldman-sachs",
+      "name": "Goldman Sachs",
+      "url": "https://www.goldmansachs.com",
+      "category": "institutional-kr-jp",
+      "primary_persona": "institutional",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "글로벌 IB, serif heading 옵션"
+    },
+    {
+      "id": "samsung",
+      "name": "Samsung",
+      "url": "https://www.samsung.com",
+      "category": "institutional-kr-jp",
+      "primary_persona": "institutional",
+      "language": "ko-en-ja",
+      "discovered_via": ["user-brief"]
+    },
+    {
+      "id": "lg",
+      "name": "LG",
+      "url": "https://www.lg.com",
+      "category": "institutional-kr-jp",
+      "primary_persona": "institutional",
+      "language": "ko-en-ja",
+      "discovered_via": ["user-brief"]
+    },
+    {
+      "id": "boj",
+      "name": "日本銀行",
+      "url": "https://www.boj.or.jp",
+      "category": "institutional-kr-jp",
+      "primary_persona": "institutional",
+      "language": "ja-en",
+      "discovered_via": ["user-brief"],
+      "notes": "일본 중앙은행"
+    },
+    {
+      "id": "mufg",
+      "name": "三菱UFJ銀行",
+      "url": "https://www.bk.mufg.jp",
+      "category": "institutional-kr-jp",
+      "primary_persona": "institutional",
+      "language": "ja-en",
+      "discovered_via": ["user-brief"]
+    },
+
+    {
+      "id": "apple-hig",
+      "name": "Apple Human Interface Guidelines",
+      "url": "https://developer.apple.com/design",
+      "category": "system",
+      "primary_persona": "dev-technical",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "디자인 시스템 정점, rationale 산문 학습"
+    },
+    {
+      "id": "material-design",
+      "name": "Material Design 3",
+      "url": "https://m3.material.io",
+      "category": "system",
+      "primary_persona": "dev-technical",
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "Google 디자인 시스템, 토큰 어휘 표준"
+    },
+    {
+      "id": "carbon-ibm",
+      "name": "Carbon (IBM)",
+      "url": "https://carbondesignsystem.com",
+      "category": "system",
+      "primary_persona": "institutional",
+      "also_candidates": ["dev-technical"],
+      "language": "en",
+      "discovered_via": ["user-brief"],
+      "notes": "IBM 디자인 시스템, institutional + dev 경계"
+    },
+    {
+      "id": "polaris-shopify",
+      "name": "Polaris (Shopify)",
+      "url": "https://polaris.shopify.com",
+      "category": "system",
+      "primary_persona": "dev-technical",
+      "language": "en",
+      "discovered_via": ["user-brief"]
+    },
+    {
+      "id": "primer-github",
+      "name": "Primer (GitHub)",
+      "url": "https://primer.style",
+      "category": "system",
+      "primary_persona": "dev-technical",
+      "language": "en",
+      "discovered_via": ["user-brief"]
+    },
+    {
+      "id": "spectrum-adobe",
+      "name": "Spectrum (Adobe)",
+      "url": "https://spectrum.adobe.com",
+      "category": "system",
+      "primary_persona": "dev-technical",
+      "language": "en",
+      "discovered_via": ["user-brief"]
+    },
+    {
+      "id": "fluent-microsoft",
+      "name": "Fluent (Microsoft)",
+      "url": "https://fluent2.microsoft.design",
+      "category": "system",
+      "primary_persona": "dev-technical",
+      "language": "en",
+      "discovered_via": ["user-brief"]
+    },
+    {
+      "id": "atlassian-design",
+      "name": "Atlassian Design",
+      "url": "https://atlassian.design",
+      "category": "system",
+      "primary_persona": "dev-technical",
+      "language": "en",
+      "discovered_via": ["user-brief"]
+    }
+  ],
+  "stats": {
+    "total_brands": 65,
+    "by_persona": {
+      "dev-technical": 12,
+      "luxury-trust": 12,
+      "clinical": 8,
+      "japanese-minimal": 6,
+      "editorial": 8,
+      "community": 5,
+      "playful-friendly": 7,
+      "institutional": 11
+    },
+    "by_category": {
+      "saas-dev": 12,
+      "kaitori-luxury": 12,
+      "medical-kr": 8,
+      "pharmacy-jp": 6,
+      "wiki-editorial": 8,
+      "community-social": 5,
+      "consumer-playful": 7,
+      "institutional-kr-jp": 11,
+      "system": 8
+    }
+  },
+  "next_steps": [
+    "magi-wiki/content/_inbox/에 reference 카테고리 신설 (target_type: reference) — 본 list의 brand를 골라 1건씩 독립 분석 후 _inbox 드롭",
+    "Phase 2 자동화 (GitHub Actions cron)는 Exit_sys 1차 실측 끝난 후 셋업",
+    "list 갱신 cadence: 분기별 +10~20건, dead reference 정리"
+  ]
+}
