@@ -1,6 +1,6 @@
 # magi-front
 
-**Magi Frontend Design Assets** — DESIGN.md 5종 + shadcn registry v4 5 preset.
+**Magi Frontend Design Assets** — DESIGN.md 8종 + shadcn registry v4 8 preset.
 
 다른 프로덕트(seolmyung·kanpo·prub·jp-otc·exit-sys 등)가 *cp 한 줄* 또는 *shadcn install 한 줄*로 가져갈 수 있는 디자인 자산 레포. 위키가 아니며 코드도 직접 호스팅하지 않는다. 페르소나 산문(rationale) + 토큰(CSS 변수 + DTCG)만 둔다.
 
@@ -51,17 +51,58 @@ npx shadcn@latest add https://magi-front.vercel.app/r/clinical
 
 ---
 
-## 페르소나 5종
+## 페르소나 8종
 
-| persona | mood | primary use | language |
-|---------|------|-------------|----------|
-| **clinical** | 정제 / 신뢰 | 의료·한의원 (seolmyung) | KR |
-| **editorial** | 지식 / 가독성 | 위키·교육 (kanpo) | JP-KO |
-| **community** | 따뜻함 / 사회성 | 한방 라이프 (prub) | KR |
-| **japanese-minimal** | 미니멀 / 약국 | OTC·약국 (jp-otc) | JP |
-| **luxury-trust** | 럭셔리 / 거래신뢰 | 카이토리 (exit-sys) | KR-JP |
+| persona | mood | primary use | language | status |
+|---------|------|-------------|----------|--------|
+| **clinical** | 정제 / 신뢰 | 의료·한의원 (seolmyung) | KR | v0.1 검증 |
+| **editorial** | 지식 / 가독성 | 위키·교육 (kanpo) | JP-KO | v0.1 검증 |
+| **community** | 따뜻함 / 사회성 | 한방 라이프 (prub) | KR | v0.1 검증 |
+| **japanese-minimal** | 미니멀 / 약국 | OTC·약국 (jp-otc) | JP | v0.1 검증 |
+| **luxury-trust** | 럭셔리 / 거래신뢰 | 카이토리 (exit-sys) | KR-JP | v0.1 후보 |
+| **dev-technical** | 정보 명료 / SaaS | 대시보드·개발자 도구 | en-ko | v0.2 후보 |
+| **playful-friendly** | 활기 / 캐주얼 | 컨슈머·온보딩·게임화 | ko-en | v0.2 후보 |
+| **institutional** | 보수 / 신뢰 | 정부·금융·대기업 | ko-ja-en | v0.2 후보 |
 
 각 페르소나 산문은 `design-md/<persona>.md`에서, 코드 자산은 `registry/styles/<persona>/`에서 본다.
+
+> **status 표기** — `검증`은 internal 프로덕트 1회 이상 적용 흔적 있음. `후보`는 신설된 페르소나로 첫 실측 대기. luxury-trust는 Exit_sys 1차 적용 직후 `검증`으로 승격 예정.
+
+---
+
+## 페르소나 선택 가이드
+
+5종 → 8종 확장 후 선택 비용이 늘었다. 다음 4질문으로 결정한다.
+
+```
+Q1. 무드 — 신뢰·정밀 / 친밀·따뜻 / 럭셔리·격식 / 활기·캐주얼 / 정보·명료 / 보수·기관 중?
+Q2. 정보 종류 — 짧은 단위(훑는) vs 긴 단위(읽는) vs 데이터·표(검사하는)?
+Q3. 언어 — KR / JP / KR-JP / JP-KO / en / 그 외?
+Q4. 규제 도메인 — 의료법·약기법·금융 광고규제·정품검증 등 시각 시그널 규제 있음?
+```
+
+### 결정 트리
+
+| 무드 (Q1) | 정보 (Q2) | 언어 (Q3) | 규제 (Q4) | → 페르소나 |
+|---|---|---|---|---|
+| 신뢰·정밀 | 짧음 | KR | 의료법 | **clinical** |
+| 신뢰·정밀 | 짧음 | JP | 약기법 | **japanese-minimal** |
+| 친밀·따뜻 | 긴 글 | JP-KO | – | **editorial** |
+| 친밀·따뜻 | 짧음 (커뮤니티) | KR | – | **community** |
+| 럭셔리·격식 | 짧음 (거래) | KR-JP | 정품검증 | **luxury-trust** |
+| 정보·명료 | 데이터·표 | en-ko | – | **dev-technical** |
+| 활기·캐주얼 | 짧음 (개인 경험) | ko-en | – | **playful-friendly** |
+| 보수·기관 | 표·문서 | ko-ja-en | 금융·광고규제 | **institutional** |
+| **매칭 없음** | – | – | – | ⚠ persona vacancy 후보 — `_inbox` 드롭 |
+
+### 페르소나 경계 (혼동 방지)
+
+비슷해 보이지만 *다른 페르소나*인 쌍:
+
+- **clinical vs institutional** — clinical은 *환자에게 따뜻한 의료 정밀*, institutional은 *시민·고객에게 격식 있는 기관 무게감*. clinical은 deep teal + radius md, institutional은 deep navy + radius sm·accent 거의 X
+- **community vs playful-friendly** — community는 *타인과 연결의 따뜻함*, playful은 *개인 경험의 활기*. community는 warm coral + 차분, playful은 vivid violet + 마이크로 애니메이션
+- **dev-technical vs japanese-minimal** — dev는 *데이터·코드 명료* (Latin geometric sans), JP-min은 *일본 약국 정보밀도* (JP only sans, 약기법)
+- **luxury-trust vs editorial** — luxury는 *거래신뢰* (charcoal + gold + sans body), editorial은 *long-form 가독성* (warm paper + serif body)
 
 ---
 
@@ -69,20 +110,26 @@ npx shadcn@latest add https://magi-front.vercel.app/r/clinical
 
 ```
 magi-front/
-├── design-md/                  # DESIGN.md 5종 (사람이 읽는 산문)
+├── design-md/                  # DESIGN.md 8종 (사람이 읽는 산문)
 │   ├── clinical.md
 │   ├── editorial.md
 │   ├── community.md
 │   ├── japanese-minimal.md
-│   └── luxury-trust.md
+│   ├── luxury-trust.md
+│   ├── dev-technical.md
+│   ├── playful-friendly.md
+│   └── institutional.md
 ├── registry/                   # shadcn registry v4 (기계가 install)
-│   ├── registry.json           # 루트 매니페스트 (5 preset 인덱싱)
+│   ├── registry.json           # 루트 매니페스트 (8 preset 인덱싱)
 │   └── styles/
 │       ├── clinical/{registry-item.json, theme.css, tokens.json, README.md}
 │       ├── editorial/...
 │       ├── community/...
 │       ├── japanese-minimal/...
-│       └── luxury-trust/...
+│       ├── luxury-trust/...
+│       ├── dev-technical/...
+│       ├── playful-friendly/...
+│       └── institutional/...
 ├── public/                     # Vercel 정적 호스팅 루트 (빌드 산출물)
 │   ├── design-md/              #   ↳ design-md/ 미러
 │   └── r/                      #   ↳ registry-item.json 미러

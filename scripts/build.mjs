@@ -20,7 +20,16 @@ const DESIGN_MD_SRC = join(ROOT, 'design-md');
 const REGISTRY_SRC = join(ROOT, 'registry');
 const PUBLIC_DIR = join(ROOT, 'public');
 
-const PERSONAS = ['clinical', 'editorial', 'community', 'japanese-minimal', 'luxury-trust'];
+const PERSONAS = [
+  'clinical',
+  'editorial',
+  'community',
+  'japanese-minimal',
+  'luxury-trust',
+  'dev-technical',
+  'playful-friendly',
+  'institutional',
+];
 
 function ensureDir(p) {
   mkdirSync(p, { recursive: true });
@@ -68,14 +77,32 @@ function mirrorRegistry() {
   }
 }
 
+const DESCRIPTIONS = {
+  'clinical': '정제된 한국 의료 — deep teal · 신뢰·가독성',
+  'editorial': 'JP-KO 한방 위키 long-form — serif · warm paper',
+  'community': '한방 라이프 커뮤니티 — warm coral · 둥근 형태',
+  'japanese-minimal': '일본 OTC·약국 — 정보밀도·각진·단일 액센트',
+  'luxury-trust': 'KR-JP 카이토리 럭셔리 — charcoal · gold · serif heading',
+  'dev-technical': '개발자 도구·SaaS — near-mono · sky accent · dark 1급',
+  'playful-friendly': '소비자 캐주얼 — vivid violet · golden yellow · 둥근 형태',
+  'institutional': '기관·정부·금융 — deep navy · 거의 없는 accent · 각진',
+};
+
 function writeIndexHtml() {
+  const designLis = PERSONAS.map(
+    (p) => `    <li><a href="/design-md/${p}.md">${p}</a><small>${DESCRIPTIONS[p] || ''}</small></li>`,
+  ).join('\n');
+  const registryLis = PERSONAS.map(
+    (p) => `    <li><a href="/r/${p}.json">/r/${p}</a></li>`,
+  ).join('\n');
+
   const html = `<!doctype html>
 <html lang="ko">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>magi-front · Magi Frontend Design Assets</title>
-<meta name="description" content="DESIGN.md 5 personas + shadcn registry v4 5 preset (clinical / editorial / community / japanese-minimal / luxury-trust)." />
+<meta name="description" content="DESIGN.md ${PERSONAS.length} personas + shadcn registry v4 ${PERSONAS.length} preset (${PERSONAS.join(' / ')})." />
 <style>
   :root { color-scheme: light dark; --fg:#1A1B1E; --bg:#FAFAF8; --muted:#6A665D; --accent:#B8956A; --border:#D9D5C9; }
   @media (prefers-color-scheme: dark) { :root { --fg:#F5F2EC; --bg:#0F1012; --muted:#9A968D; --accent:#C9A57F; --border:#2C2D31; } }
@@ -98,32 +125,24 @@ function writeIndexHtml() {
 <body>
 <main>
   <h1>magi-front</h1>
-  <p class="subtitle">Magi Frontend Design Assets — DESIGN.md 5 personas + shadcn registry v4 5 preset.</p>
+  <p class="subtitle">Magi Frontend Design Assets — DESIGN.md ${PERSONAS.length} personas + shadcn registry v4 ${PERSONAS.length} preset.</p>
 
   <h2>DESIGN.md (사람이 읽는 산문)</h2>
   <ul>
-    <li><a href="/design-md/clinical.md">clinical</a><small>정제된 한국 의료 — deep teal · 신뢰·가독성</small></li>
-    <li><a href="/design-md/editorial.md">editorial</a><small>JP-KO 한방 위키 long-form — serif · warm paper</small></li>
-    <li><a href="/design-md/community.md">community</a><small>한방 라이프 커뮤니티 — warm coral · 둥근 형태</small></li>
-    <li><a href="/design-md/japanese-minimal.md">japanese-minimal</a><small>일본 OTC·약국 — 정보밀도·각진·단일 액센트</small></li>
-    <li><a href="/design-md/luxury-trust.md">luxury-trust</a><small>KR-JP 카이토리 럭셔리 — charcoal · gold · serif heading</small></li>
+${designLis}
   </ul>
 
   <h2>shadcn registry (기계가 install)</h2>
   <ul>
-    <li><a href="/r/clinical.json">/r/clinical</a></li>
-    <li><a href="/r/editorial.json">/r/editorial</a></li>
-    <li><a href="/r/community.json">/r/community</a></li>
-    <li><a href="/r/japanese-minimal.json">/r/japanese-minimal</a></li>
-    <li><a href="/r/luxury-trust.json">/r/luxury-trust</a></li>
+${registryLis}
   </ul>
 
   <h2>사용 패턴</h2>
   <pre><code># DESIGN.md cp
-curl -o ./DESIGN.md https://magi-front.vercel.app/design-md/clinical.md
+curl -o ./DESIGN.md https://magi-front.vercel.app/design-md/&lt;persona&gt;.md
 
 # shadcn install
-npx shadcn@latest add https://magi-front.vercel.app/r/clinical</code></pre>
+npx shadcn@latest add https://magi-front.vercel.app/r/&lt;persona&gt;</code></pre>
 
   <footer>
     <a class="gh" href="https://github.com/gojj1229/magi-front">github.com/gojj1229/magi-front</a> · MIT

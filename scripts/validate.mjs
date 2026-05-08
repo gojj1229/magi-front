@@ -14,7 +14,16 @@ import { fileURLToPath } from 'node:url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
 
-const PERSONAS = ['clinical', 'editorial', 'community', 'japanese-minimal', 'luxury-trust'];
+const PERSONAS = [
+  'clinical',
+  'editorial',
+  'community',
+  'japanese-minimal',
+  'luxury-trust',
+  'dev-technical',
+  'playful-friendly',
+  'institutional',
+];
 
 function readFrontmatter(filePath) {
   const txt = readFileSync(filePath, 'utf8');

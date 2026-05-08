@@ -1,0 +1,73 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "playful-friendly",
+  "type": "registry:style",
+  "title": "Playful Friendly",
+  "description": "소비자·캐주얼 브랜드 — vivid violet + golden yellow + 둥근 형태 + 큰 weight. design-md/playful-friendly.md의 토큰 미러.",
+  "categories": [
+    "theme",
+    "consumer",
+    "brand"
+  ],
+  "files": [
+    {
+      "path": "theme.css",
+      "type": "registry:style",
+      "target": "app/globals.css"
+    }
+  ],
+  "cssVars": {
+    "theme": {
+      "font-heading": "'Plus Jakarta Sans', 'Quicksand', 'Pretendard', sans-serif",
+      "font-body": "'Plus Jakarta Sans', 'Inter', 'Pretendard', sans-serif",
+      "radius-sm": "0.5rem",
+      "radius-md": "0.75rem",
+      "radius-lg": "1rem",
+      "radius-xl": "1.5rem"
+    },
+    "light": {
+      "background": "#FFFFFF",
+      "foreground": "#1C1917",
+      "card": "#FAF7FF",
+      "card-foreground": "#1C1917",
+      "popover": "#FFFFFF",
+      "popover-foreground": "#1C1917",
+      "primary": "#8B5CF6",
+      "primary-foreground": "#FFFFFF",
+      "secondary": "#FAF7FF",
+      "secondary-foreground": "#1C1917",
+      "muted": "#FAF7FF",
+      "muted-foreground": "#57534E",
+      "accent": "#FBBF24",
+      "accent-foreground": "#1C1917",
+      "destructive": "#F43F5E",
+      "destructive-foreground": "#FFFFFF",
+      "border": "#E7E5E4",
+      "input": "#E7E5E4",
+      "ring": "#8B5CF6",
+      "radius": "1rem"
+    },
+    "dark": {
+      "background": "#1A1626",
+      "foreground": "#FAF7FF",
+      "card": "#251F33",
+      "card-foreground": "#FAF7FF",
+      "popover": "#1A1626",
+      "popover-foreground": "#FAF7FF",
+      "primary": "#A78BFA",
+      "primary-foreground": "#1A1626",
+      "secondary": "#251F33",
+      "secondary-foreground": "#FAF7FF",
+      "muted": "#251F33",
+      "muted-foreground": "#B5B0BF",
+      "accent": "#FCD34D",
+      "accent-foreground": "#1A1626",
+      "destructive": "#FB7185",
+      "destructive-foreground": "#1A1626",
+      "border": "#3D3447",
+      "input": "#3D3447",
+      "ring": "#A78BFA",
+      "radius": "1rem"
+    }
+  }
+}

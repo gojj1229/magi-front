@@ -57,6 +57,39 @@
       "files": [
         { "path": "registry/styles/luxury-trust/theme.css", "type": "registry:style", "target": "app/globals.css" }
       ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "dev-technical",
+      "type": "registry:style",
+      "title": "Dev Technical / SaaS",
+      "description": "개발자 도구·SaaS·대시보드 — near-monochrome + 단일 sky accent + dark mode 1급",
+      "categories": ["theme", "saas", "developer"],
+      "files": [
+        { "path": "registry/styles/dev-technical/theme.css", "type": "registry:style", "target": "app/globals.css" }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "playful-friendly",
+      "type": "registry:style",
+      "title": "Playful Friendly",
+      "description": "소비자·캐주얼 브랜드 — vivid violet + golden yellow + 둥근 형태",
+      "categories": ["theme", "consumer", "brand"],
+      "files": [
+        { "path": "registry/styles/playful-friendly/theme.css", "type": "registry:style", "target": "app/globals.css" }
+      ]
+    },
+    {
+      "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+      "name": "institutional",
+      "type": "registry:style",
+      "title": "Institutional / Corporate",
+      "description": "기관·정부·금융 보수 신뢰 — deep navy · 거의 없는 accent · 각진 sm radius",
+      "categories": ["theme", "government", "finance"],
+      "files": [
+        { "path": "registry/styles/institutional/theme.css", "type": "registry:style", "target": "app/globals.css" }
+      ]
     }
   ]
 }

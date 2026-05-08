@@ -1,0 +1,67 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dev-technical",
+  "type": "registry:style",
+  "title": "Dev Technical / SaaS",
+  "description": "개발자 도구·SaaS·대시보드 — near-monochrome + 단일 sky accent + dark mode 1급. design-md/dev-technical.md의 토큰 미러.",
+  "categories": ["theme", "saas", "developer"],
+  "files": [
+    {
+      "path": "theme.css",
+      "type": "registry:style",
+      "target": "app/globals.css"
+    }
+  ],
+  "cssVars": {
+    "theme": {
+      "font-heading": "'Geist', 'Inter', system-ui, sans-serif",
+      "font-body": "'Geist', 'Inter', system-ui, sans-serif",
+      "font-mono": "'Geist Mono', 'JetBrains Mono', ui-monospace, monospace",
+      "radius-sm": "0.25rem"
+    },
+    "light": {
+      "background": "#FAFAFA",
+      "foreground": "#0F0F12",
+      "card": "#F4F4F5",
+      "card-foreground": "#0F0F12",
+      "popover": "#FAFAFA",
+      "popover-foreground": "#0F0F12",
+      "primary": "#0F0F12",
+      "primary-foreground": "#FAFAFA",
+      "secondary": "#F4F4F5",
+      "secondary-foreground": "#0F0F12",
+      "muted": "#F4F4F5",
+      "muted-foreground": "#71717A",
+      "accent": "#0EA5E9",
+      "accent-foreground": "#FAFAFA",
+      "destructive": "#EF4444",
+      "destructive-foreground": "#FAFAFA",
+      "border": "#E4E4E7",
+      "input": "#E4E4E7",
+      "ring": "#0EA5E9",
+      "radius": "0.25rem"
+    },
+    "dark": {
+      "background": "#0A0A0F",
+      "foreground": "#FAFAFA",
+      "card": "#18181B",
+      "card-foreground": "#FAFAFA",
+      "popover": "#0A0A0F",
+      "popover-foreground": "#FAFAFA",
+      "primary": "#FAFAFA",
+      "primary-foreground": "#0A0A0F",
+      "secondary": "#18181B",
+      "secondary-foreground": "#FAFAFA",
+      "muted": "#18181B",
+      "muted-foreground": "#A1A1AA",
+      "accent": "#38BDF8",
+      "accent-foreground": "#0A0A0F",
+      "destructive": "#EF4444",
+      "destructive-foreground": "#0A0A0F",
+      "border": "#27272A",
+      "input": "#27272A",
+      "ring": "#38BDF8",
+      "radius": "0.25rem"
+    }
+  }
+}

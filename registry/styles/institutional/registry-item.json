@@ -1,0 +1,66 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "institutional",
+  "type": "registry:style",
+  "title": "Institutional / Corporate",
+  "description": "기관·정부·금융 보수 신뢰 — deep navy + 거의 없는 accent + 각진 sm radius. design-md/institutional.md의 토큰 미러.",
+  "categories": ["theme", "government", "finance"],
+  "files": [
+    {
+      "path": "theme.css",
+      "type": "registry:style",
+      "target": "app/globals.css"
+    }
+  ],
+  "cssVars": {
+    "theme": {
+      "font-heading": "'Pretendard', 'Noto Sans KR', 'Noto Sans JP', sans-serif",
+      "font-body": "'Pretendard', 'Noto Sans KR', 'Noto Sans JP', sans-serif",
+      "radius-sm": "0.25rem"
+    },
+    "light": {
+      "background": "#FFFFFF",
+      "foreground": "#1A1F2E",
+      "card": "#F8F9FA",
+      "card-foreground": "#1A1F2E",
+      "popover": "#FFFFFF",
+      "popover-foreground": "#1A1F2E",
+      "primary": "#1E3A5F",
+      "primary-foreground": "#FFFFFF",
+      "secondary": "#F8F9FA",
+      "secondary-foreground": "#1A1F2E",
+      "muted": "#F8F9FA",
+      "muted-foreground": "#4A5568",
+      "accent": "#2C5282",
+      "accent-foreground": "#FFFFFF",
+      "destructive": "#9B1C1C",
+      "destructive-foreground": "#FFFFFF",
+      "border": "#CBD5E0",
+      "input": "#CBD5E0",
+      "ring": "#1E3A5F",
+      "radius": "0.25rem"
+    },
+    "dark": {
+      "background": "#1A1F2E",
+      "foreground": "#E2E8F0",
+      "card": "#252B3D",
+      "card-foreground": "#E2E8F0",
+      "popover": "#1A1F2E",
+      "popover-foreground": "#E2E8F0",
+      "primary": "#5285B8",
+      "primary-foreground": "#1A1F2E",
+      "secondary": "#252B3D",
+      "secondary-foreground": "#E2E8F0",
+      "muted": "#252B3D",
+      "muted-foreground": "#A0AEC0",
+      "accent": "#6499D8",
+      "accent-foreground": "#1A1F2E",
+      "destructive": "#E53E3E",
+      "destructive-foreground": "#1A1F2E",
+      "border": "#2D3748",
+      "input": "#2D3748",
+      "ring": "#5285B8",
+      "radius": "0.25rem"
+    }
+  }
+}
