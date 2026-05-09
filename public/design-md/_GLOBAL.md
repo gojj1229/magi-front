@@ -131,16 +131,30 @@ magi-front 헌법 개정은 magi-wiki `_inbox` → `decision/DEC-*` 박제 → m
 
 # References
 
-- magi-wiki `incident/INC-045-exit-sys-persona-vacancy.md` — 페르소나 부재 함정 원전
-- magi-wiki `decision/DEC-049-front-skill-charter-option-c.md` — 자산·지식 분리 헌장
-- magi-wiki `decision/DEC-128-magi-front-v0.2-persona-extension.md` — 8 페르소나 확장 결정
-- magi-wiki `entity/persona-luxury-trust.md` — luxury-trust 페르소나 entity
-- magi-wiki `entity/magi-front-asset-repo.md` — 자산 레포 운영 entity
-- magi-wiki `content/SCHEMA.md` v2.2 — target_type:reference 카테고리 신설
+## magi-wiki 박제 (Knowledge 레이어)
 
-magi-front 측:
+선행 (DEC + INC + entity + SCHEMA):
+
+- `incident/INC-045-exit-sys-persona-vacancy.md` — 페르소나 부재 함정 원전
+- `decision/DEC-049-front-skill-charter-option-c.md` — 자산·지식 분리 헌장
+- `decision/DEC-128-magi-front-v0.2-persona-extension.md` — 8 페르소나 확장 결정
+- `entity/persona-luxury-trust.md` — luxury-trust 페르소나 entity (§"검증 ref" sub-section에 SYN-024/025/026 + commit ce56a8a 추적 표 박제됨)
+- `entity/magi-front-asset-repo.md` — 자산 레포 운영 entity (v0.2.1 ce56a8a + _GLOBAL.md 5조항 표 + 흡수 메커니즘 A/B/C + 4-layer 진화 시그널 표 박제됨)
+- `entity/magi-front-monitoring-list.md` — 89 brand × 9 카테고리 × 8 페르소나 매핑
+- `content/SCHEMA.md` v2.2 — target_type:reference 카테고리 신설
+
+자매 synthesis (Exit_sys 1차 실측 사이클 — 본 _GLOBAL.md 신설의 직접 원전):
+
+- `synthesis/SYN-024-exit-sys-luxury-trust-experiment-branch.md` — INC-045 격리 실험 + dark mode 동시 도입 (Exit_sys 측 7섹션 광범위 보고)
+- `synthesis/SYN-025-exit-sys-luxury-trust-first-validation.md` — INC-045 첫 실측 5섹션 보고서 양식 (A↔B 1:1 매핑)
+- `synthesis/SYN-026-magi-front-sot-asset-repo-response.md` — 본 `_GLOBAL.md` 신설의 자산 레포 측 응답 박제. 흡수 메커니즘 A/B/C + 4-layer 진화 layer 2 박제 (magi-wiki commit `8c755b0`)
+
+> ingest 흔적: 세션 311 → 312-b → 315 (v4.7.24 SCHEMA v2.4) → 316 (SYN-024/025) → 317 (SYN-026 + entity × 2 갱신, commit `8c755b0`)
+
+## magi-front 측
 
 - `README.md` — 운영 매뉴얼 (Maintenance 섹션에 `/magi-front-daily-commit` 박제됨)
 - `monitoring-list.json` — 외부 brand 89종 × 9 카테고리 시드 (분기별 갱신)
 - `design-md/<persona>.md` × 8 — 페르소나별 헌법
 - `registry/styles/<persona>/` × 8 — shadcn install 자산
+- commit `ce56a8a` — v0.2.1 (`_GLOBAL.md` 신설 + `luxury-trust §8 ①` 확장)

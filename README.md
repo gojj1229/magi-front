@@ -178,12 +178,17 @@ magi-front/
 - `entity/persona-dev-technical.md` / `persona-playful-friendly.md` / `persona-institutional.md` — v0.2 신규 3종
 
 ### Incident (1건)
-- `incident/INC-045-exit-sys-persona-vacancy.md` — 페르소나 부재 함정의 실측 사례. luxury-trust entity 박제 + DEC-049 + DEC-128로 5/5 요소 해소 진행 중 (Exit_sys 1차 실측 대기)
+- `incident/INC-045-exit-sys-persona-vacancy.md` — 페르소나 부재 함정의 실측 사례. **Exit_sys 1차 실측 완료 (2026-05-09)** — SYN-024 + SYN-025로 관찰 박제, SYN-026으로 magi-front 측 응답 회수. 5/5 요소 해소.
+
+### Synthesis (3건 — Exit_sys 1차 실측 사이클)
+- `synthesis/SYN-024-exit-sys-luxury-trust-experiment-branch.md` — INC-045 격리 실험 + dark mode 동시 도입 7섹션 광범위 (Exit_sys 측 관찰)
+- `synthesis/SYN-025-exit-sys-luxury-trust-first-validation.md` — INC-045 첫 실측 5섹션 보고서 양식, A↔B 1:1 매핑 (Exit_sys 측 관찰)
+- `synthesis/SYN-026-magi-front-sot-asset-repo-response.md` — magi-front `_GLOBAL.md` 신설의 자산 레포 측 응답 박제. 흡수 메커니즘 A/B/C + 4-layer 진화 layer 2 박제 (자매 synthesis)
 
 ### Schema (target_type: reference 카테고리)
 - `content/SCHEMA.md` v2.2 — 외부 brand 분석 박제용 신규 타입 도입. 명명 규칙: `<brand-id>-<persona>-candidate.md` (예: `stripe-dev-technical-candidate.md`). 본문 8섹션 표준 (What Saw → What Attracted → Where Applicable → Token Candidates → Trinity → Absorption Decision → Citation → Follow-up).
 
-> ingest 흔적: magi-wiki 세션 311 (DEC-049 + INC-045 + asset-repo + persona × 5) → 세션 312-b (DEC-128 + persona × 3 + monitoring-list + SCHEMA v2.2 + persona × 5 갱신)
+> ingest 흔적: 세션 311 (DEC-049 + INC-045 + asset-repo + persona × 5) → 312-b (DEC-128 + persona × 3 + monitoring-list + SCHEMA v2.2 + persona × 5 갱신) → 316 (SYN-024 + SYN-025) → **317 (SYN-026 + entity × 2 갱신, magi-wiki commit `8c755b0`)**
 
 ---
 
