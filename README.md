@@ -165,15 +165,25 @@ magi-front/
 
 ## magi-wiki 참조 (Knowledge 레이어)
 
-각 페르소나의 결정 근거·과거 incident·연관 컨셉은 magi-wiki에 박제된다. 정식 ingest 후 entity URL이 채워진다.
+각 페르소나의 결정 근거·과거 incident·연관 컨셉은 magi-wiki에 박제되어 있다. ingest 완료 — 다음 파일이 magi-wiki 시맨틱 검색의 1차 회수 대상.
 
-- `entity/magi-front-asset-repo.md` (이 레포 자체) — *예정*
-- `entity/persona-clinical.md` / `persona-editorial.md` / `persona-community.md` / `persona-japanese-minimal.md` / `persona-luxury-trust.md` — *예정*
-- `entity/persona-dev-technical.md` / `persona-playful-friendly.md` / `persona-institutional.md` — *v0.2 신규, 예정*
-- `entity/magi-front-monitoring-list.md` — *v1.1 신설, 예정*
-- `incident/exit-sys-persona-vacancy-2026-05-08.md` — 페르소나 부재 함정의 실측 사례
-- `decision/front-skill-charter-2026-05-08.md` — 옵션 C(지식·자산 분리) 채택
-- `decision/magi-front-v0.2-persona-extension-2026-05-09.md` — 페르소나 5→8 확장 결정 *예정*
+### Decision (2건)
+- `decision/DEC-049-front-skill-charter-option-c.md` — 옵션 C(지식·자산 분리) 채택, 3-layer 아키텍처 결정
+- `decision/DEC-128-magi-front-v0.2-persona-extension.md` — 페르소나 5→8 확장 결정 (gap 분석·경계 4쌍·9·10 6개월 후)
+
+### Entity (10건 — 페르소나 8 + 자산 레포 + 모니터링 list)
+- `entity/magi-front-asset-repo.md` — 이 레포 자체 (v0.1·v0.2 history + 8 install URL + monitoring-list 운영)
+- `entity/magi-front-monitoring-list.md` — 89 brand × 9 카테고리 × 8 페르소나 매핑 (reference inbox 시드)
+- `entity/persona-clinical.md` / `persona-editorial.md` / `persona-community.md` / `persona-japanese-minimal.md` / `persona-luxury-trust.md` — 검증된 5종 (각 entity 본문 §3에 monitoring-list 1차 소스 brand 매핑)
+- `entity/persona-dev-technical.md` / `persona-playful-friendly.md` / `persona-institutional.md` — v0.2 신규 3종
+
+### Incident (1건)
+- `incident/INC-045-exit-sys-persona-vacancy.md` — 페르소나 부재 함정의 실측 사례. luxury-trust entity 박제 + DEC-049 + DEC-128로 5/5 요소 해소 진행 중 (Exit_sys 1차 실측 대기)
+
+### Schema (target_type: reference 카테고리)
+- `content/SCHEMA.md` v2.2 — 외부 brand 분석 박제용 신규 타입 도입. 명명 규칙: `<brand-id>-<persona>-candidate.md` (예: `stripe-dev-technical-candidate.md`). 본문 8섹션 표준 (What Saw → What Attracted → Where Applicable → Token Candidates → Trinity → Absorption Decision → Citation → Follow-up).
+
+> ingest 흔적: magi-wiki 세션 311 (DEC-049 + INC-045 + asset-repo + persona × 5) → 세션 312-b (DEC-128 + persona × 3 + monitoring-list + SCHEMA v2.2 + persona × 5 갱신)
 
 ---
 
