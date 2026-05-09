@@ -1,9 +1,9 @@
 {
   "name": "magi-front",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "private": false,
   "license": "MIT",
-  "description": "Magi Frontend Design Assets — DESIGN.md 5 personas + shadcn registry v4",
+  "description": "Magi Frontend Design Assets — DESIGN.md 8 personas + _GLOBAL.md cross-cutting + shadcn registry v4",
   "homepage": "https://github.com/gojj1229/magi-front",
   "repository": {
     "type": "git",
