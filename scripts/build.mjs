@@ -49,6 +49,11 @@ function mirrorDesignMd() {
     copyFileSync(src, join(dst, `${persona}.md`));
     console.log(`  ✓ design-md/${persona}.md`);
   }
+  const globalSrc = join(DESIGN_MD_SRC, '_GLOBAL.md');
+  if (existsSync(globalSrc)) {
+    copyFileSync(globalSrc, join(dst, '_GLOBAL.md'));
+    console.log('  ✓ design-md/_GLOBAL.md');
+  }
 }
 
 function mirrorRegistry() {
@@ -126,6 +131,11 @@ function writeIndexHtml() {
 <main>
   <h1>magi-front</h1>
   <p class="subtitle">Magi Frontend Design Assets — DESIGN.md ${PERSONAS.length} personas + shadcn registry v4 ${PERSONAS.length} preset.</p>
+
+  <h2>공통 헌법 (8 페르소나 cross-cutting)</h2>
+  <ul>
+    <li><a href="/design-md/_GLOBAL.md">_GLOBAL</a><small>SOT 헌법 · verification ↔ status 의미 분기 · persona branching · 안티패턴 공통 룰셋</small></li>
+  </ul>
 
   <h2>DESIGN.md (사람이 읽는 산문)</h2>
   <ul>
